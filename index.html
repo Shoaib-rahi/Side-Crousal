@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+    }
+
+
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #030728;
+    }
+.slide-wrapper{
+    overflow: hidden;
+    margin: 0px 70px 55px;
+}
+    .class-list .class-item {
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        padding: 35px;
+        backdrop-filter: blur(40px);
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+
+    .class-list .class-item .user-image {
+        width: 200px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 40px;
+        border: 3px solid #fff;
+        padding: 4px;
+    }
+
+    .class-list .class-item .user-profession {
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .class-list .class-item .message-btn {
+        width: 200px;
+        padding: 1.5vw 4vw;
+        border: 2px solid transparent;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        color: #030728;
+        background-color: #fff;
+        font-size: 1.5rem;
+        border-radius: 8px;
+    }
+
+    .class-list .class-item .message-btn:hover {
+        border: 2px solid #fff;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2);
+    }
+</style>
+
+<body>
+
+    <div class="container swiper">
+        <div class="slide-wrapper">
+            <div class="class-list swiper-wrapper">
+                <div class="class-item  swiper-slide">
+                    <img src="images/1.avif" alt="" class="user-image">
+                    <h2 class="user-name">shoiab rahi</h2>
+                    <p class="user-profession">software developer</p>
+                    <button class="message-btn">Message</button>
+                </div>
+
+
+
+                <div class="class-item swiper-slide">
+                    <img src="images/1.avif" alt="" class="user-image">
+                    <h2 class="user-name">shoiab rahi</h2>
+                    <p class="user-profession">software developer</p>
+                    <button class="message-btn">Message</button>
+                </div>
+
+
+
+                <div class="class-item swiper-slide">
+                    <img src="images/2.avif" alt="" class="user-image">
+                    <h2 class="user-name">shoiab rahi</h2>
+                    <p class="user-profession">software developer</p>
+                    <button class="message-btn">Message</button>
+                </div>
+
+
+                <div class="class-item swiper-slide">
+                    <img src="images/3.avif" alt="" class="user-image">
+                    <h2 class="user-name">shoiab rahi</h2>
+                    <p class="user-profession">software developer</p>
+                    <button class="message-btn">Message</button>
+                </div>
+
+                <div class="class-item swiper-slide">
+                    <img src="images/2.avif" alt="" class="user-image">
+                    <h2 class="user-name">shoiab rahi</h2>
+                    <p class="user-profession">software developer</p>
+                    <button class="message-btn">Message</button>
+                </div>
+
+
+                <div class="class-item swiper-slide">
+                    <img src="images/3.avif" alt="" class="user-image">
+                    <h2 class="user-name">shoiab rahi</h2>
+                    <p class="user-profession">software developer</p>
+                    <button class="message-btn">Message</button>
+                </div>
+
+
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
